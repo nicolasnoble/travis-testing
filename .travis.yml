@@ -9,6 +9,7 @@ env:
     - TARGET=stm32f429discovery/leds
     - TARGET=mbed-lpc1768/leds
 script:
+  - make --version
   - VERBOSE=true make -C examples/$TARGET
 notifications:
   email: false
